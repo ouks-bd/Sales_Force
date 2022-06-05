@@ -11,7 +11,7 @@ public class PageObjectModel {
 		
 		public PageObjectModel() {
 			username="sobuj";
-			password ="****";
+			password ="111111";
 		}		
 		
 	}

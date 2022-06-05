@@ -23,30 +23,39 @@ String baseUrl="http://salesforce.oss.com.bd/";
 
 		
 		PageObjectModel user=new PageObjectModel();
-		driver.findElement(By.id("UserName")).sendKeys("sobuj");
-		driver.findElement(By.id("Password")).sendKeys(user.password);
+		driver.findElement(By.id("UserName")).sendKeys("info@romofood.com");
+		driver.findElement(By.id("Password")).sendKeys("****");
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		
 		driver.get("http://salesforce.oss.com.bd/Common/Shop");
 		
-		driver.findElement(By.id("Name")).sendKeys("sobuj");
-		driver.findElement(By.id("Owner")).sendKeys("sobuj");
-		driver.findElement(By.id("RegistrationNo")).sendKeys("sobuj");
-		driver.findElement(By.id("ContactPerson")).sendKeys("sobuj");
-		driver.findElement(By.id("ContactNumber")).sendKeys("sobuj");
+		driver.findElement(By.id("Name")).sendKeys("Bilal Store");
+		driver.findElement(By.id("Owner")).sendKeys("Bilal");
+		driver.findElement(By.id("RegistrationNo")).sendKeys("4576894323");
+		driver.findElement(By.id("ContactPerson")).sendKeys("Abu Kalam");
+		driver.findElement(By.id("ContactNumber")).sendKeys("01673006756");
 		
 		
-		
-		WebElement District = driver.findElement(By.id("DistrictFK2"));
+	
+		WebElement District = driver.findElement(By.id("DistrictFK"));
 		Select SelectDistrict =new Select(District);
 		SelectDistrict.selectByValue("40");
 		Thread.sleep(2000);
 		
-		driver.findElement(By.id("ThanaFK")).sendKeys("sobuj");
 		
-		driver.findElement(By.id("btnsave")).click();
+		WebElement ThanaFK = driver.findElement(By.id("ThanaFK"));
+		Select Thana =new Select(ThanaFK);
+		Thana.selectByValue("24");
+		Thread.sleep(2000);
 		
+		//col-lg-12
+		
+		driver.findElement(By.className("col-lg-12")).click();
+		//driver.findElement(By.id("btnsave")).click();
+		
+		driver.get("http://salesforce.oss.com.bd/Common/Shop");
+		Thread.sleep(2000);
 	
 	
 }
