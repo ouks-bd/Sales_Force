@@ -24,17 +24,17 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		PageObjectModel user=new PageObjectModel();
 		driver.findElement(By.id("UserName")).sendKeys("info@romofood.com");
-		driver.findElement(By.id("Password")).sendKeys("****");
+		driver.findElement(By.id("Password")).sendKeys("@@");
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		
 		driver.get("http://salesforce.oss.com.bd/Common/Shop");
 		
-		driver.findElement(By.id("Name")).sendKeys("Bilal Store");
-		driver.findElement(By.id("Owner")).sendKeys("Bilal");
-		driver.findElement(By.id("RegistrationNo")).sendKeys("4576894323");
-		driver.findElement(By.id("ContactPerson")).sendKeys("Abu Kalam");
-		driver.findElement(By.id("ContactNumber")).sendKeys("01673006756");
+		driver.findElement(By.id("Name")).sendKeys("Kader Enterprise");
+		driver.findElement(By.id("Owner")).sendKeys("kader");
+		driver.findElement(By.id("RegistrationNo")).sendKeys("6894468943");
+		driver.findElement(By.id("ContactPerson")).sendKeys("Kader mia");
+		driver.findElement(By.id("ContactNumber")).sendKeys("0187300688");
 		
 		
 	
@@ -51,8 +51,8 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		//col-lg-12
 		
-		driver.findElement(By.className("col-lg-12")).click();
-		//driver.findElement(By.id("btnsave")).click();
+		//driver.findElement(By.className("col-lg-12")).click();
+		driver.findElement(By.id("btnsave")).click();
 		
 		driver.get("http://salesforce.oss.com.bd/Common/Shop");
 		Thread.sleep(2000);
