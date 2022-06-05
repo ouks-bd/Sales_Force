@@ -25,7 +25,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.password);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		//http://salesforce.oss.com.bd/Common/Shop
+		
 		driver.get("http://salesforce.oss.com.bd/Common/Shop");
 	
 	
