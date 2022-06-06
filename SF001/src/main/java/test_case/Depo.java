@@ -24,6 +24,8 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("UserName")).sendKeys("yeamin");
 		driver.findElement(By.id("Password")).sendKeys("@@");
 		driver.findElement(By.className("col-xs-4")).click();
+		
+		
  
 	
 }

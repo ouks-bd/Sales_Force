@@ -22,7 +22,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.manage().window().maximize();
 
 		
-		PageObjectModel user=new PageObjectModel();
+		PageObjectModel user =new PageObjectModel();
 		driver.findElement(By.id("UserName")).sendKeys("info@romofood.com");
 		driver.findElement(By.id("Password")).sendKeys("@@");
 		driver.findElement(By.className("col-xs-4")).click();
