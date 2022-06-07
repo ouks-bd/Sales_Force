@@ -28,8 +28,52 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
+		
+		
 		//user
 		driver.get("http://salesforce.oss.com.bd/common/basicuser");
+		
+		driver.findElement(By.id("Name")).sendKeys("Masud Parvej");
+		
+		WebElement NationalityID = driver.findElement(By.id("NationalityID"));
+		Select Nationality =new Select(NationalityID);
+		Nationality.selectByValue("1");
+		
+		
+		driver.findElement(By.id("NIDNo")).sendKeys("8769098878");
+		
+		WebElement BloodGroup = driver.findElement(By.id("BloodGroupID"));
+		Select Blood =new Select(BloodGroup);
+		Blood.selectByValue("7");
+		Thread.sleep(5000);
+		
+		driver.findElement(By.id("JoiningDate")).sendKeys("2022-06-06");
+		Thread.sleep(5000);
+		
+		WebElement Religion = driver.findElement(By.id("ReligionID"));
+		Select ReligionID =new Select(Religion);
+		ReligionID.selectByValue("7");
+		
+		driver.findElement(By.id("DOB")).sendKeys("2000-01-01");
+		driver.findElement(By.id("WorkMobileNo")).sendKeys("01897909090");
+		Thread.sleep(5000);
+		
+		WebElement GenderID = driver.findElement(By.id("GenderID"));
+		Select Gender =new Select(GenderID);
+		Gender.selectByValue("1");
+		
+		WebElement MaritalStatusID = driver.findElement(By.id("MaritalStatusID"));
+		Select MaritalStatus =new Select(MaritalStatusID);
+		MaritalStatus.selectByValue("1");
+		
+		driver.findElement(By.id("FatherName")).sendKeys("Sahabuddin Ahmed");
+		driver.findElement(By.id("MotherName")).sendKeys("Kamrun Nahar");
+		driver.findElement(By.id("WorkEmailId")).sendKeys("Demo@oss.com.bd");
+		Thread.sleep(5000);
+//		driver.findElement(By.id("ImageUpload")).sendKeys("Wer54@#");
+//		driver.findElement(By.id("btnBasicSave")).click();
+		
+		
 		System.out.println("Passed-User");
 		//Manage Menu
 		driver.get("http://salesforce.oss.com.bd/account/menu");
@@ -50,7 +94,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		//Company 
 		driver.get("http://salesforce.oss.com.bd/account/baseregister");
 		
-		
+		driver.findElement(By.id("Name")).sendKeys("Emrul Brother's Company");
 		driver.findElement(By.id("Email")).sendKeys("Emrul@oss.com.bd");
 		driver.findElement(By.id("Mobile")).sendKeys("01955560320");
 		driver.findElement(By.id("txtPassword")).sendKeys("Wer54@#");

@@ -5,8 +5,8 @@
     <classes>
       <class name="test_case.Company">
         <methods>
+          <include name="Salesforce"/>
           <include name="setDriver"/>
-          <include name="locatorlearning"/>
           <include name="close"/>
         </methods>
       </class> <!-- test_case.Company -->
