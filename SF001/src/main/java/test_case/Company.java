@@ -46,6 +46,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		//User Registration
 		driver.get("http://salesforce.oss.com.bd/account/userregister");
 		System.out.println("Passed-User Registration");
+		
 		//Company 
 		driver.get("http://salesforce.oss.com.bd/account/baseregister");
 		
@@ -59,6 +60,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		Select SelectDistrict =new Select(District);
 		SelectDistrict.selectByValue("40");
 		Thread.sleep(2000);
+		
 		
 		System.out.println("Passed-Company ");
 		
