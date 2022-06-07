@@ -3,6 +3,8 @@ package test_case;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import base.Driver;
@@ -52,6 +54,12 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Mobile")).sendKeys("01955560320");
 		driver.findElement(By.id("txtPassword")).sendKeys("Wer54@#");
 		driver.findElement(By.id("txtConfirmPassword")).sendKeys("Wer54@#");
+		
+		WebElement District = driver.findElement(By.id("CommonDistrictFK"));
+		Select SelectDistrict =new Select(District);
+		SelectDistrict.selectByValue("40");
+		Thread.sleep(2000);
+		
 		System.out.println("Passed-Company ");
 		
 		Thread.sleep(5000);
