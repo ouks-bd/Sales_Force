@@ -61,6 +61,10 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		SelectDistrict.selectByValue("40");
 		Thread.sleep(2000);
 		
+		WebElement UserPackage = driver.findElement(By.id("UserPackageFK"));
+		Select UserPackageFK =new Select(UserPackage);
+		UserPackageFK.selectByValue("1");
+		Thread.sleep(2000);
 		
 		System.out.println("Passed-Company ");
 		
