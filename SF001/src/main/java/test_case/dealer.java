@@ -22,7 +22,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		PageObjectModel user=new PageObjectModel();
 		driver.findElement(By.id("UserName")).sendKeys("julhas");
-		driver.findElement(By.id("Password")).sendKeys(user.password);
+		driver.findElement(By.id("Password")).sendKeys("111111");
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		driver.get("http://salesforce.oss.com.bd/saleslead/orderlist");
