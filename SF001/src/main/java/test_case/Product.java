@@ -47,12 +47,20 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		Select Unit =new Select(UnitFK);
 		Unit.selectByValue("4");
 		
-		WebElement UnitFK = driver.findElement(By.id("PackTypeFK"));
-		Select Unit =new Select(UnitFK);
-		Unit.selectByValue("4");
+		WebElement PackTypeFK = driver.findElement(By.id("PackTypeFK"));
+		Select PackType =new Select(PackTypeFK);
+		PackType.selectByValue("1");
 		
+		driver.findElement(By.id("ModelNo")).sendKeys("001");
+		driver.findElement(By.id("Name")).sendKeys("Demo Product");
 		
+		WebElement UnitFKo = driver.findElement(By.id("UnitFK"));
+		Select UnitFKop =new Select(UnitFKo);
+		UnitFKop.selectByValue("12");
 		
+		driver.findElement(By.id("PurchasePrice")).sendKeys("100");
+		
+		Thread.sleep(5000);
 
 }
 }
