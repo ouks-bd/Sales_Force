@@ -47,7 +47,9 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		Select Unit =new Select(UnitFK);
 		Unit.selectByValue("4");
 		
-		
+		WebElement UnitFK = driver.findElement(By.id("PackTypeFK"));
+		Select Unit =new Select(UnitFK);
+		Unit.selectByValue("4");
 		
 		
 		
