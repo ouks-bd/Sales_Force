@@ -2,33 +2,33 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-07T13:03:55 BDT" name="Default suite" finished-at="2022-06-07T13:04:16 BDT" duration-ms="21139">
+  <suite started-at="2022-06-09T16:53:44 BDT" name="Default suite" finished-at="2022-06-09T16:53:56 BDT" duration-ms="11444">
     <groups>
     </groups>
-    <test started-at="2022-06-07T13:03:55 BDT" name="Default test" finished-at="2022-06-07T13:04:16 BDT" duration-ms="21139">
-      <class name="test_case.Company">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:test_case.Company@33d512c1]" started-at="2022-06-07T13:03:49 BDT" name="setDriver" finished-at="2022-06-07T13:03:55 BDT" duration-ms="5164" status="PASS">
+    <test started-at="2022-06-09T16:53:44 BDT" name="Default test" finished-at="2022-06-09T16:53:56 BDT" duration-ms="11444">
+      <class name="test_case.Product">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:test_case.Product@33d512c1]" started-at="2022-06-09T16:53:38 BDT" name="setDriver" finished-at="2022-06-09T16:53:44 BDT" duration-ms="5935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="Salesforce()[pri:0, instance:test_case.Company@33d512c1]" started-at="2022-06-07T13:03:55 BDT" name="Salesforce" finished-at="2022-06-07T13:04:16 BDT" duration-ms="21100" status="FAIL">
+        <test-method signature="Salesforce()[pri:0, instance:test_case.Product@33d512c1]" started-at="2022-06-09T16:53:44 BDT" name="Salesforce" finished-at="2022-06-09T16:53:56 BDT" duration-ms="11388" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate option with value: 7
+              <![CDATA[Cannot locate option with value: 12
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'SHOEB', ip: '192.168.95.32', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 7
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 12
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'SHOEB', ip: '192.168.95.32', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
 at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
-at test_case.Company.Salesforce(Company.java:55)
+at test_case.Product.Salesforce(Product.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,11 +63,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Salesforce -->
-        <test-method is-config="true" signature="close()[pri:0, instance:test_case.Company@33d512c1]" started-at="2022-06-07T13:04:16 BDT" name="close" finished-at="2022-06-07T13:04:16 BDT" duration-ms="349" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:test_case.Product@33d512c1]" started-at="2022-06-09T16:53:56 BDT" name="close" finished-at="2022-06-09T16:53:57 BDT" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- test_case.Company -->
+      </class> <!-- test_case.Product -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
