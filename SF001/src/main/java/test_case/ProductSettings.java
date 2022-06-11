@@ -44,7 +44,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		System.out.println("Passed-sub category");
 		
 		driver.get("http://salesforce.oss.com.bd/common/packunit");
-		System.out.println("Passed-Pack unit;
+		System.out.println("Passed-Pack unit");
 		
 	
 	
