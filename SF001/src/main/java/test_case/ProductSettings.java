@@ -37,11 +37,14 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.get("http://salesforce.oss.com.bd/common/packtype");
 		System.out.println("Passed-Pack Type");
 		//Enrolled Company
-		driver.get("http://salesforce.oss.com.bd/account/register");
-		System.out.println("Passed-Enrolled Company");
+		driver.get("http://salesforce.oss.com.bd/common/category");
+		System.out.println("Passed-Category");
 		//User Registration
-		driver.get("http://salesforce.oss.com.bd/account/userregister");
-		System.out.println("Passed-User Registration");
+		driver.get("http://salesforce.oss.com.bd/common/subcategory");
+		System.out.println("Passed-sub category");
+		
+		driver.get("http://salesforce.oss.com.bd/common/packunit");
+		System.out.println("Passed-Pack unit;
 		
 	
 	
