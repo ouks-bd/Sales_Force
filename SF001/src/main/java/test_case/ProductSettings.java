@@ -34,8 +34,8 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
 		System.out.println("Passed-Manufacturer");
 		//Package
-		driver.get("http://salesforce.oss.com.bd/account/package");
-		System.out.println("Passed-Package");
+		driver.get("http://salesforce.oss.com.bd/common/packtype");
+		System.out.println("Passed-Pack Type");
 		//Enrolled Company
 		driver.get("http://salesforce.oss.com.bd/account/register");
 		System.out.println("Passed-Enrolled Company");
