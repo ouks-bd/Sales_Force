@@ -26,4 +26,29 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("UserName")).sendKeys(user.UserNameCompany);
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
+
+	
+		driver.get("http://salesforce.oss.com.bd/common/competitorproduct");
+		System.out.println("Passed-Competitor Product");
+		//Role
+		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
+		System.out.println("Passed-Manufacturer");
+		//Package
+		driver.get("http://salesforce.oss.com.bd/account/package");
+		System.out.println("Passed-Package");
+		//Enrolled Company
+		driver.get("http://salesforce.oss.com.bd/account/register");
+		System.out.println("Passed-Enrolled Company");
+		//User Registration
+		driver.get("http://salesforce.oss.com.bd/account/userregister");
+		System.out.println("Passed-User Registration");
+		
+	
+	
+	
+	
+	
+	
+	
+	}
 }
