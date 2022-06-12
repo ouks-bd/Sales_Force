@@ -3,6 +3,8 @@ package test_case;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import base.Driver;
@@ -29,6 +31,24 @@ String baseUrl="http://salesforce.oss.com.bd/";
 
 	
 		driver.get("http://salesforce.oss.com.bd/common/competitorproduct");
+		
+		WebElement CatID = driver.findElement(By.id("CatID"));
+		Select Cat =new Select(CatID);
+		Cat.selectByValue("8");
+		
+		WebElement SubCatID = driver.findElement(By.id("SubCatID"));
+		Select SubCat =new Select(SubCatID);
+		SubCat.selectByValue("12");
+		
+		WebElement SubCatIDD = driver.findElement(By.id("SubCatID"));
+		Select SubCatIDDD =new Select(SubCatIDD);
+		SubCatIDDD.selectByValue("15");
+		
+		driver.findElement(By.id("Password")).sendKeys("Pran Up");
+		driver.findElement(By.id("btnsave")).click();
+		
+		
+		
 		System.out.println("Passed-Competitor Product");
 		//Role
 		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
