@@ -48,6 +48,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		//driver.findElement(By.id("btnsave")).click();
 		System.out.println("Passed-Competitor Product");
 		
+		driver.close();
 		
 		//manufacturer
 		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
