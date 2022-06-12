@@ -29,7 +29,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 
-	
+		//competitorproduct
 		driver.get("http://salesforce.oss.com.bd/common/competitorproduct");
 		
 		WebElement CatID = driver.findElement(By.id("CatID"));
@@ -45,12 +45,11 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		SubCatIDDD.selectByValue("15");
 		
 		driver.findElement(By.id("Password")).sendKeys("Pran Up");
-		driver.findElement(By.id("btnsave")).click();
-		
-		
-		
+		//driver.findElement(By.id("btnsave")).click();
 		System.out.println("Passed-Competitor Product");
-		//Role
+		
+		
+		//manufacturer
 		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
 		System.out.println("Passed-Manufacturer");
 		//Package
