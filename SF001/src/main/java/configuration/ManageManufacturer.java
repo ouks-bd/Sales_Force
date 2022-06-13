@@ -3,6 +3,8 @@ package configuration;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import base.Driver;
@@ -26,7 +28,15 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		driver.get("http://salesforce.oss.com.bd/common/manufacturer");
-	
+		
+		
+		driver.findElement(By.id("Name")).sendKeys("Telco Food & Baverage");
+		
+		
+		
+		WebElement Common_CountriesFK = driver.findElement(By.id("Common_CountriesFK"));
+		Select Common_Countries =new Select(Common_CountriesFK);
+		Common_Countries.selectByValue("8");
 		
 	
 	}
