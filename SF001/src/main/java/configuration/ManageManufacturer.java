@@ -32,11 +32,18 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		driver.findElement(By.id("Name")).sendKeys("Telco Food & Baverage");
 		
-		
-		
 		WebElement Common_CountriesFK = driver.findElement(By.id("Common_CountriesFK"));
 		Select Common_Countries =new Select(Common_CountriesFK);
-		Common_Countries.selectByValue("8");
+		Common_Countries.selectByValue("12");
+		
+		driver.findElement(By.id("Address")).sendKeys("Gorib-E-Newaz  Road, Sector 13, Uttora-dhaka");
+		driver.findElement(By.id("Contact")).sendKeys("0190898989");
+		driver.findElement(By.id("Email")).sendKeys("demo@beacontechbd.com");
+		
+		
+		//driver.findElement(By.id("btnsave")).click();
+		
+		Thread.sleep(5000);
 		
 	
 	}
