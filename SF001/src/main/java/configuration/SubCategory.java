@@ -3,13 +3,15 @@ package configuration;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import base.Driver;
 import pom.PageObjectModel;
 
-public class PackType extends Driver {
-		
+public class SubCategory extends Driver{
+	
 String baseUrl="http://salesforce.oss.com.bd/";
 	
 	@Test
@@ -25,12 +27,14 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/common/packtype");
+		driver.get("http://salesforce.oss.com.bd/common/subcategory");
+		
+		WebElement Common_CategoryFK = driver.findElement(By.id("Common_CategoryFK"));
+		Select Common_Category =new Select(Common_CategoryFK);
+		Common_Category.selectByValue("8");
+		
 		driver.findElement(By.id("Name")).sendKeys("Test-Demo");
-		
 		//driver.findElement(By.id("btnsave")).click();
-		
-		//need to add delete button
 		Thread.sleep(5000);
-}
+	}
 }

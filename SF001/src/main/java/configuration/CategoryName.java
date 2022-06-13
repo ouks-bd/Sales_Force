@@ -29,6 +29,6 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Name")).sendKeys("Test-Demo");
 		
 		//driver.findElement(By.id("btnsave")).click();
-
+		Thread.sleep(5000);
 }
 }
