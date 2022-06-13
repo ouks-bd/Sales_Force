@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="configuration.ManageManufacturer">
+      <class name="ScmSettings.CommissionSlab">
         <methods>
           <include name="setDriver"/>
           <include name="Salesforce"/>
           <include name="close"/>
         </methods>
-      </class> <!-- configuration.ManageManufacturer -->
+      </class> <!-- ScmSettings.CommissionSlab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
