@@ -37,6 +37,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Rate")).clear();
 		driver.findElement(By.id("Rate")).sendKeys("500");
 		
+		
 		//driver.findElement(By.id("btnsave")).click();
 		
 		Thread.sleep(5000);
