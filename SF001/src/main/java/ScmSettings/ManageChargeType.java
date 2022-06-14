@@ -34,6 +34,10 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		//driver.findElement(By.id("btnsave")).click();
 		
+		
+		driver.get("http://salesforce.oss.com.bd/Common/ReturnType");
+		driver.findElement(By.id("Name")).sendKeys("Demo Return");
+		
 		Thread.sleep(5000);
 }
 }
