@@ -3,13 +3,15 @@ package scmsettings;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import base.Driver;
 import pom.PageObjectModel;
 
-public class TermsandCondition extends Driver{
-	
+public class ManageClient extends Driver {
+		
 String baseUrl="http://salesforce.oss.com.bd/";
 	
 	@Test
@@ -25,15 +27,23 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/common/termsncondition");
+		driver.get("http://salesforce.oss.com.bd/common/customer");
 		
-		driver.findElement(By.id("Name")).sendKeys("Demo Terms & Condition");
 		
-		//form-control textarea1 wysihtml5-editor placeholder
-		driver.findElement(By.id("Remarks")).sendKeys("Goods should be clean");
+		WebElement ClientTypeFK = driver.findElement(By.id("ClientTypeFK"));
+		Select ClientType =new Select(ClientTypeFK);
+		ClientType.selectByValue("3");
+		
+		driver.findElement(By.id("Name")).sendKeys("Obyed Ullah Khan");
+		driver.findElement(By.id("Contact")).sendKeys("01898989898");
+		driver.findElement(By.id("Email")).sendKeys("demo@beacontechbd.com");
+		driver.findElement(By.id("Address")).sendKeys("1st floor, Aprt # C-1 known as WESTERLIES APARTMENT, "
+				+ "House # 35, Road "
+				+ "# 28 (Old), 15 (New), Dhanmondi R/A, Dhaka-1209.");
 		
 		//driver.findElement(By.id("btnsave")).click();
 		
 		Thread.sleep(5000);
+		
 }
 }
