@@ -1,4 +1,4 @@
-package ScmSettings;
+package scmsettings;
 
 import java.time.Duration;
 

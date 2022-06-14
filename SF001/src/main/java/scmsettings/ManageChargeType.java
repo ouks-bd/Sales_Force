@@ -1,4 +1,4 @@
-package ScmSettings;
+package scmsettings;
 
 import java.time.Duration;
 
@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 import base.Driver;
 import pom.PageObjectModel;
 
-public class CommissionSlab extends Driver {
+public class ManageChargeType extends Driver {
+
 	
 String baseUrl="http://salesforce.oss.com.bd/";
 	
@@ -25,22 +26,20 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/target/commissionslab");
+		driver.get("http://salesforce.oss.com.bd/common/chargetype");
+		
+		driver.findElement(By.id("Name")).sendKeys("Demo Charge");
+		driver.findElement(By.id("IsPercent")).click();
+		driver.findElement(By.id("Amount")).sendKeys("20");
+		
+		//driver.findElement(By.id("btnsave")).click();
 		
 		
-		driver.findElement(By.id("MinAmount")).clear();
-		driver.findElement(By.id("MinAmount")).sendKeys("100");
-		
-		driver.findElement(By.id("MaxAmount")).clear();
-		driver.findElement(By.id("MaxAmount")).sendKeys("1000");
-		
-		driver.findElement(By.id("Rate")).clear();
-		driver.findElement(By.id("Rate")).sendKeys("500");
-		
+		driver.get("http://salesforce.oss.com.bd/Common/ReturnType");
+		driver.findElement(By.id("Name")).sendKeys("Demo Return");
 		
 		//driver.findElement(By.id("btnsave")).click();
 		
 		Thread.sleep(5000);
-
 }
 }
