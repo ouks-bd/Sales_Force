@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scmsettings.TermsandCondition">
+      <class name="distributionsettings.ManageRoute">
         <methods>
           <include name="setDriver"/>
-          <include name="Salesforce"/>
           <include name="close"/>
+          <include name="Salesforce"/>
         </methods>
-      </class> <!-- scmsettings.TermsandCondition -->
+      </class> <!-- distributionsettings.ManageRoute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
