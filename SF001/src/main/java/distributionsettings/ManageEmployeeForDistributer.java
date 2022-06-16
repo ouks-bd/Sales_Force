@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import base.Driver;
 import pom.PageObjectModel;
 
-public class ManageEmployeeRoute extends Driver {
+public class ManageEmployeeForDistributer extends Driver {
 	
 String baseUrl="http://salesforce.oss.com.bd/saleslead/assignroutetouser";
 	
@@ -33,24 +33,6 @@ String baseUrl="http://salesforce.oss.com.bd/saleslead/assignroutetouser";
 		Select employeee=new Select(employeeeID);
 		employeee.selectByValue("115");
 		
-		WebElement ZoneID = driver.findElement(By.id("ZoneID"));
-		Select Zone=new Select(ZoneID);
-		Zone.selectByValue("9");
-		
-		WebElement Common_ZoneArea = driver.findElement(By.id("AreaID"));
-		Select Common_ZoneAreaFK=new Select(Common_ZoneArea);
-		Common_ZoneAreaFK.selectByValue("7");
-		
-		WebElement RouteID = driver.findElement(By.id("RouteID"));
-		Select Route = new Select(RouteID);
-		Route.selectByValue("14");
-		
-		
-		driver.findElement(By.id("FilterShowID")).click();
-		
-		
-		Thread.sleep(5000);
-	
-	}
-}
 
+}
+}
