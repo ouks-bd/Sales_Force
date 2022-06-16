@@ -12,7 +12,7 @@ import pom.PageObjectModel;
 
 public class ManageEmployeeForDistributer extends Driver {
 	
-String baseUrl="http://salesforce.oss.com.bd/saleslead/assignusertodealer";
+	String baseUrl="http://salesforce.oss.com.bd/";
 	
 	@Test
 	public void Salesforce() throws InterruptedException {
@@ -29,10 +29,14 @@ String baseUrl="http://salesforce.oss.com.bd/saleslead/assignusertodealer";
 		
 		driver.get("http://salesforce.oss.com.bd/saleslead/assignroutetouser");
 		
-		WebElement employeeeID = driver.findElement(By.id("employeeeID"));
-		Select employeee=new Select(employeeeID);
-		employeee.selectByValue("115");
+		WebElement DealerID = driver.findElement(By.id("DealerID"));
+		Select Dealer=new Select(DealerID);
+		Dealer.selectByValue("29");
 		
-
+		WebElement EmployeeID = driver.findElement(By.id("EmployeeID"));
+		Select Employee=new Select(EmployeeID);
+		Employee.selectByValue("112");
+		
+		
 }
 }

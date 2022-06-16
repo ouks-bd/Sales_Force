@@ -12,7 +12,7 @@ import pom.PageObjectModel;
 
 public class ManageEmployeeRoute extends Driver {
 	
-String baseUrl="http://salesforce.oss.com.bd/saleslead/assignroutetouser";
+	String baseUrl="http://salesforce.oss.com.bd/";
 	
 	@Test
 	public void Salesforce() throws InterruptedException {
