@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="distributionsettings.ManageRoute">
+      <class name="distributionsettings.ManageEmployeeRoute">
         <methods>
           <include name="setDriver"/>
-          <include name="close"/>
           <include name="Salesforce"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- distributionsettings.ManageRoute -->
+      </class> <!-- distributionsettings.ManageEmployeeRoute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
