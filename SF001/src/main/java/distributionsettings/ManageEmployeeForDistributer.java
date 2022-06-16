@@ -27,7 +27,7 @@ public class ManageEmployeeForDistributer extends Driver {
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/saleslead/assignroutetouser");
+		driver.get("http://salesforce.oss.com.bd/saleslead/assignusertodealer");
 		
 		WebElement DealerID = driver.findElement(By.id("DealerID"));
 		Select Dealer=new Select(DealerID);
@@ -37,6 +37,8 @@ public class ManageEmployeeForDistributer extends Driver {
 		Select Employee=new Select(EmployeeID);
 		Employee.selectByValue("112");
 		
+		//driver.findElement(By.id("btnsave")).click();
 		
+		Thread.sleep(5000);
 }
 }

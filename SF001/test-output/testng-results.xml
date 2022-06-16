@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-15T17:09:22 BDT" name="Default suite" finished-at="2022-06-15T17:09:32 BDT" duration-ms="10375">
+  <suite started-at="2022-06-16T17:40:51 BDT" name="Default suite" finished-at="2022-06-16T17:41:06 BDT" duration-ms="15128">
     <groups>
     </groups>
-    <test started-at="2022-06-15T17:09:22 BDT" name="Default test" finished-at="2022-06-15T17:09:32 BDT" duration-ms="10375">
-      <class name="distributionsettings.ManageEmployeeRoute">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:distributionsettings.ManageEmployeeRoute@33d512c1]" started-at="2022-06-15T17:09:17 BDT" name="setDriver" finished-at="2022-06-15T17:09:22 BDT" duration-ms="4667" status="PASS">
+    <test started-at="2022-06-16T17:40:51 BDT" name="Default test" finished-at="2022-06-16T17:41:06 BDT" duration-ms="15128">
+      <class name="distributionsettings.ManageEmployeeForDistributer">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:distributionsettings.ManageEmployeeForDistributer@33d512c1]" started-at="2022-06-16T17:40:46 BDT" name="setDriver" finished-at="2022-06-16T17:40:51 BDT" duration-ms="4363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="Salesforce()[pri:0, instance:distributionsettings.ManageEmployeeRoute@33d512c1]" started-at="2022-06-15T17:09:22 BDT" name="Salesforce" finished-at="2022-06-15T17:09:32 BDT" duration-ms="10326" status="PASS">
+        <test-method signature="Salesforce()[pri:0, instance:distributionsettings.ManageEmployeeForDistributer@33d512c1]" started-at="2022-06-16T17:40:51 BDT" name="Salesforce" finished-at="2022-06-16T17:41:06 BDT" duration-ms="15075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Salesforce -->
-        <test-method is-config="true" signature="close()[pri:0, instance:distributionsettings.ManageEmployeeRoute@33d512c1]" started-at="2022-06-15T17:09:32 BDT" name="close" finished-at="2022-06-15T17:09:33 BDT" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:distributionsettings.ManageEmployeeForDistributer@33d512c1]" started-at="2022-06-16T17:41:06 BDT" name="close" finished-at="2022-06-16T17:41:06 BDT" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- distributionsettings.ManageEmployeeRoute -->
+      </class> <!-- distributionsettings.ManageEmployeeForDistributer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
