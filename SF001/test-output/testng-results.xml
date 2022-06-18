@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-18T11:09:25 BDT" name="Default suite" finished-at="2022-06-18T11:09:46 BDT" duration-ms="20065">
+  <suite started-at="2022-06-18T11:58:34 BDT" name="Default suite" finished-at="2022-06-18T11:58:48 BDT" duration-ms="14668">
     <groups>
     </groups>
-    <test started-at="2022-06-18T11:09:25 BDT" name="Default test" finished-at="2022-06-18T11:09:46 BDT" duration-ms="20065">
-      <class name="productsettings.ProductSettings">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:productsettings.ProductSettings@33d512c1]" started-at="2022-06-18T11:09:20 BDT" name="setDriver" finished-at="2022-06-18T11:09:25 BDT" duration-ms="5464" status="PASS">
+    <test started-at="2022-06-18T11:58:34 BDT" name="Default test" finished-at="2022-06-18T11:58:48 BDT" duration-ms="14668">
+      <class name="productsettings.AttendanceShift">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:productsettings.AttendanceShift@33d512c1]" started-at="2022-06-18T11:58:28 BDT" name="setDriver" finished-at="2022-06-18T11:58:34 BDT" duration-ms="5474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="Salesforce()[pri:0, instance:productsettings.ProductSettings@33d512c1]" started-at="2022-06-18T11:09:26 BDT" name="Salesforce" finished-at="2022-06-18T11:09:46 BDT" duration-ms="20020" status="PASS">
+        <test-method signature="Salesforce()[pri:0, instance:productsettings.AttendanceShift@33d512c1]" started-at="2022-06-18T11:58:34 BDT" name="Salesforce" finished-at="2022-06-18T11:58:48 BDT" duration-ms="14614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Salesforce -->
-        <test-method is-config="true" signature="close()[pri:0, instance:productsettings.ProductSettings@33d512c1]" started-at="2022-06-18T11:09:46 BDT" name="close" finished-at="2022-06-18T11:09:47 BDT" duration-ms="928" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:productsettings.AttendanceShift@33d512c1]" started-at="2022-06-18T11:58:48 BDT" name="close" finished-at="2022-06-18T11:58:49 BDT" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- productsettings.ProductSettings -->
+      </class> <!-- productsettings.AttendanceShift -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
