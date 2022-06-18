@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="distributionsettings.ManageEmployeeForDistributer">
+      <class name="productsettings.ProductSettings">
         <methods>
           <include name="setDriver"/>
           <include name="Salesforce"/>
           <include name="close"/>
         </methods>
-      </class> <!-- distributionsettings.ManageEmployeeForDistributer -->
+      </class> <!-- productsettings.ProductSettings -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
