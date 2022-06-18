@@ -33,6 +33,7 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		System.out.println("Raw Item");
 		
+		Thread.sleep(5000);
 		
 		driver.get("http://salesforce.oss.com.bd/common/rawsubcategory");
 		
@@ -42,12 +43,15 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		driver.findElement(By.id("Name")).sendKeys("POP Corn");
 		
+		System.out.println("Raw Item category");
+		
+		Thread.sleep(5000);
+		
 		driver.get("http://salesforce.oss.com.bd/common/rawitem");
 		
 		WebElement ForRaw = driver.findElement(By.id("RawCategoryFK"));
 		Select ForRa=new Select(ForRaw);
 		ForRa.selectByValue("1");
-		
 		
 		WebElement RawSubCategoryFK= driver.findElement(By.id("RawSubCategoryFK"));
 		Select RawSubCategory=new Select(RawSubCategoryFK);
@@ -55,13 +59,11 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		driver.findElement(By.id("Name")).sendKeys("POP Corn");
 		
-		
 		WebElement UnitFK= driver.findElement(By.id("UnitFK"));
 		Select Unit=new Select(UnitFK);
 		Unit.selectByValue("1");
 		
-		
-		
+		System.out.println("Item");
 		
 		Thread.sleep(5000);
 	
