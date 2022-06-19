@@ -29,7 +29,6 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		driver.findElement(By.id("ShiftName")).sendKeys("Evening");
 		driver.findElement(By.id("DeductionTime")).sendKeys("60");
-		
 		driver.findElement(By.id("ToleranceTime")).clear();
 		driver.findElement(By.id("ToleranceTime")).sendKeys("30");
 		
