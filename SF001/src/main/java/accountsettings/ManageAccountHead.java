@@ -28,9 +28,6 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.className("col-xs-4")).click();
 		
 		driver.get("http://salesforce.oss.com.bd/accounting/accounthead");
-
-	
-		
 		
 		WebElement AccountTypeFK = driver.findElement(By.id("AccountTypeFK"));
 		Select AccountType=new Select(AccountTypeFK);
@@ -47,6 +44,9 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		
 		driver.findElement(By.id("Name")).sendKeys("Deamo Head");
 		
+		System.out.println("Passed");
+		
+		Thread.sleep(5000);
 		
 		
 		

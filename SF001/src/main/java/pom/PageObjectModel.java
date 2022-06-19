@@ -19,7 +19,7 @@ public class PageObjectModel {
 		public PageObjectModel() {
 			
 			UserNameCompany="info@romofood.com";
-			Companypassword ="+++";
+			Companypassword ="000";
 			
 			UserNameDepo="yeamin";
 			Depopassword ="==";
