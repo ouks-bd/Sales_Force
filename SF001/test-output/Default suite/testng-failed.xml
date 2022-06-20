@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="productsettings.AttendanceShift">
+      <class name="accountsettings.ManageAccountHead">
         <methods>
           <include name="setDriver"/>
           <include name="close"/>
           <include name="Salesforce"/>
         </methods>
-      </class> <!-- productsettings.AttendanceShift -->
+      </class> <!-- accountsettings.ManageAccountHead -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
