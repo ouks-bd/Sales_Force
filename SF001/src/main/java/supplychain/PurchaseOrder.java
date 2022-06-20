@@ -1,4 +1,4 @@
-package purchaseorder;
+package supplychain;
 
 import java.time.Duration;
 
@@ -39,14 +39,26 @@ String baseUrl="http://salesforce.oss.com.bd/";
 		driver.findElement(By.id("PINo")).sendKeys("00909");
 		driver.findElement(By.id("Remarks")).sendKeys("Automation Test");
 		
-		Thread
+		driver.get("http://salesforce.oss.com.bd/order/receivelist");
+		driver.get("http://salesforce.oss.com.bd/Order/Receive/49");
+		
+		 
+		WebElement ProductFK = driver.findElement(By.id("ProductFK"));
+		Select Product=new Select(ProductFK);
+		Product.selectByValue("16");
 		
 		
+		driver.findElement(By.id("UnitRate")).clear();
+		driver.findElement(By.id("UnitRate")).sendKeys("Challan 0011");
+		driver.findElement(By.id("Quantity")).clear();
+		driver.findElement(By.id("Quantity")).sendKeys("10000");
 		
 		
+		WebElement UnitFK = driver.findElement(By.id("UnitFK"));
+		Select Unit=new Select(UnitFK);
+		Unit.selectByValue("8");
 		
-		
-		
-
+		Thread.sleep(5000);
+			
 }
 }
