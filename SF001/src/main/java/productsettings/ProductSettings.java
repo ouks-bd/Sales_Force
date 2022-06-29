@@ -12,7 +12,7 @@ import pom.PageObjectModel;
 
 public class ProductSettings extends Driver {
 	
-String baseUrl="http://salesforce.oss.com.bd/";
+	String baseUrl="https://sf.bdbizhub.com/";
 	
 	@Test
 	public void Salesforce() throws InterruptedException {
