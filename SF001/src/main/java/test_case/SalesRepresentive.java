@@ -12,7 +12,7 @@ import pom.PageObjectModel;
 public class SalesRepresentive extends Driver{
 
 	
-String baseUrl="http://salesforce.oss.com.bd/";
+	String baseUrl="https://sf.bdbizhub.com/";
 	
 	@Test
 	public void locatorlearning() throws InterruptedException {

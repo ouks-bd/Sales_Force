@@ -10,7 +10,7 @@ import pom.PageObjectModel;
 
 public class Depo extends Driver {
 	
-String baseUrl="http://salesforce.oss.com.bd/";
+	String baseUrl="https://sf.bdbizhub.com/";
 	
 	@Test
 	public void locatorlearning() throws InterruptedException {
