@@ -11,7 +11,7 @@ import pom.PageObjectModel;
 
 public class ManageSupplier extends Driver {
 	
-String baseUrl="http://salesforce.oss.com.bd/";
+	String baseUrl="https://sf.bdbizhub.com/";
 	
 	@Test
 	public void Salesforce() throws InterruptedException {
