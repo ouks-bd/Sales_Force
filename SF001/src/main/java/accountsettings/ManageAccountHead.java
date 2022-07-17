@@ -9,20 +9,23 @@ import org.testng.annotations.Test;
 
 import base.Driver;
 import pom.PageObjectModel;
+import pom.Page_Object_Model;
 
 public class ManageAccountHead  extends Driver{
 	
-String baseUrl="https://sf.bdbizhub.com/";
+
 	
 	@Test
 	public void Salesforce() throws InterruptedException {
 		
-		driver.get(baseUrl);
+		PageObjectModel user=new PageObjectModel();
+		
+		driver.get(user.BaseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 
 		
-		PageObjectModel user=new PageObjectModel();
+		//PageObjectModel user=new PageObjectModel();
 		driver.findElement(By.id("UserName")).sendKeys(user.UserNameCompany);
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();

@@ -18,6 +18,9 @@ public class PageObjectModel {
 		public String Dealerpassword;
 		public String Storepassword;
 		public String personalpassword;
+		
+		public String BaseUrl ="https://sf.bdbizhub.com/";
+		
 		public PageObjectModel() {
 			
 			UserNameCompany="info@romofood.com";
