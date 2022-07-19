@@ -30,7 +30,8 @@ public class ManageAccountHead  extends Driver{
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/accounting/accounthead");
+		driver.get(user.AcountHead);
+		
 		
 		WebElement AccountTypeFK = driver.findElement(By.id("AccountTypeFK"));
 		Select AccountType=new Select(AccountTypeFK);
@@ -50,8 +51,6 @@ public class ManageAccountHead  extends Driver{
 		System.out.println("Passed");
 		
 		Thread.sleep(5000);
-		
-		
-		
+			
 }
 }

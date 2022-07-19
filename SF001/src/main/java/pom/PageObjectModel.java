@@ -19,12 +19,18 @@ public class PageObjectModel {
 		public String Storepassword;
 		public String personalpassword;
 		
-		public String BaseUrl ="https://sf.bdbizhub.com/";
+		public String BaseUrl ="http://test.bdbizhub.com/";
+		
+		public String AcountHead="http://test.bdbizhub.com/accounting/accounthead";
+		public String Categorey ="http://test.bdbizhub.com/common/category";
+		public String Manufacturer = "http://test.bdbizhub.com/common/manufacturer";
+		public String PackSize ="http://test.bdbizhub.com/common/packunit";
+		
 		
 		public PageObjectModel() {
 			
 			UserNameCompany="info@romofood.com";
-			Companypassword ="";
+			Companypassword ="admin@123";
 			
 			UserNameDepo="yeamin";
 			Depopassword ="==";
