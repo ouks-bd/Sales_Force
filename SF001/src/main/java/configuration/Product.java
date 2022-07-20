@@ -29,7 +29,7 @@ public class Product extends Driver {
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/common/product");
+		driver.get(user.Product);
 		
 		WebElement CatID = driver.findElement(By.id("CatID"));
 		Select Cat =new Select(CatID);

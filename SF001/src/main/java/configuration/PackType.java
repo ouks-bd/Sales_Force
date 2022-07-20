@@ -27,7 +27,7 @@ public class PackType extends Driver {
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/common/packtype");
+		driver.get(user.PackType);
 		driver.findElement(By.id("Name")).sendKeys("Test-Demo");
 		
 		//driver.findElement(By.id("btnsave")).click();
