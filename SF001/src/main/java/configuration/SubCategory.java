@@ -29,7 +29,7 @@ public class SubCategory extends Driver{
 		driver.findElement(By.id("Password")).sendKeys(user.Companypassword);
 		driver.findElement(By.className("col-xs-4")).click();
 		
-		driver.get("http://salesforce.oss.com.bd/common/subcategory");
+		driver.get(user.SubCategory);
 		
 		WebElement Common_CategoryFK = driver.findElement(By.id("Common_CategoryFK"));
 		Select Common_Category =new Select(Common_CategoryFK);

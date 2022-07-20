@@ -27,6 +27,7 @@ public class PageObjectModel {
 		public String PackSize ="http://test.bdbizhub.com/common/packunit";
 		public String PackType = "http://test.bdbizhub.com/common/packtype"; 
 		public String Product ="http://test.bdbizhub.com/common/product";
+		public String SubCategory ="http://test.bdbizhub.com/common/subcategory";
 		
 		public PageObjectModel() {
 			
