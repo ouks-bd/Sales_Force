@@ -17,7 +17,7 @@ public class Product extends Driver {
 	@Test
 	public void Salesforce() throws InterruptedException {
 		
-		PageObjectModel user=new PageObjectModel();
+		PageObjectModel user= new PageObjectModel();
 		
 		driver.get(user.BaseUrl);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
